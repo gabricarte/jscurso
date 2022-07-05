@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+    <style>
+        body {
+            font-family: monospace;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Verificar nacionalidade </h1>
+    Digite o país que nasceu: <input type="text" name="nac" id="nac">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="resultado"></div>
+
+    <script>
+        function verificar() {
+            var nac = window.document.getElementById('nac').value.toLowerCase();
+            var res = window.document.getElementById('resultado')
+
+            if (nac == 'brasil') {
+                res.innerHTML += ('Você é brasileiro!')
+            }
+            else {
+                res.innerHTML += ('Você é estrangeiro!')
+            }
+        }
+/*
+        Quando for declarar a variavel do pais, pode usar o .value  ex.: var pais = document.getElementById('pais').value, se não o if não funciona, já que Brasil é string e não a tag <input> como o codigo puxa "document.getElementById('pais)'
+        */
+
+    </script>
+</body>
+
+</html>
