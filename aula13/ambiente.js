@@ -1,7 +1,7 @@
 var c = 1 // Estrutura de repetição com teste lógico no final
 do {
     console.log('Tudo bem?')
-    c++ // c = c + c
+    c++ // c = c + 1
 } while ((c <= 2))
 
 
@@ -9,6 +9,6 @@ do {
 var c = 1
 while (c <= 2) {
     console.log('Tudo bem?')
-    c++ // c = c + c
+    c++ // c = c + 1
 }
 */
