@@ -2,7 +2,7 @@ let lista = []
 let num = document.getElementById('txtnumb')
 
 function adicionar() {
-    if (isNumero(num.value) && !inLista(num.value, lista)) { // funções para verificar se é um número e se já está na lista 
+    if (isNumero(num.value) && !inLista(num.value, lista)) { // funções para verificar se é um número e se já está na lista, o "!" na frente indica negação.
         let tab = document.getElementById('seltab')
         let n = Number(num.value)
         lista.push(n)
